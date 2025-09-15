@@ -36,6 +36,19 @@ export namespace Provider {
         },
       }
     },
+    alter: async () => {
+      return {
+        autoload: false,
+        options: {
+          baseURL: "https://alterhq.com/api",
+        },
+        async getModel(sdk: any, modelID: string) {
+          // Alter uses Provider#Model-name format, but we need to handle the conversion
+          // For now, we'll pass the modelID as-is since it should already be in the correct format
+          return sdk(modelID)
+        },
+      }
+    },
     openai: async () => {
       return {
         autoload: false,

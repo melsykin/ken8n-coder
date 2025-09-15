@@ -1,9 +1,216 @@
 {
-  "$schema": "https://kenkai.dev/ken8n-coder/config.json",
-  "mcp": {
-    "context7": {
-      "type": "remote",
-      "url": "https://mcp.context7.com/sse"
+  "$schema": "https://ken8n-coder.ai/config.json",
+  "provider": {
+    "alter": {
+      "npm": "@ai-sdk/openai-compatible",
+      "name": "Alter",
+      "api": "https://alterhq.com/api/v1",
+      "options": {
+        "baseURL": "https://alterhq.com/api/v1"
+      },
+      "models": {
+        "OpenAI#gpt-3.5-turbo": {
+          "maxTokens": 16384
+        },
+        "OpenAI#gpt-4-turbo": {
+          "maxTokens": 128000
+        },
+        "OpenAI#gpt-4o": {
+          "maxTokens": 128000
+        },
+        "OpenAI#gpt-4o-2024-08-06": {
+          "maxTokens": 128000
+        },
+        "OpenAI#gpt-4o-mini": {
+          "maxTokens": 128000
+        },
+        "OpenAI#chatgpt-4o-latest": {
+          "maxTokens": 128000
+        },
+        "OpenAI#gpt-4.1": {
+          "maxTokens": 128000
+        },
+        "OpenAI#gpt-4.1-mini": {
+          "maxTokens": 128000
+        },
+        "OpenAI#gpt-4.1-nano": {
+          "maxTokens": 128000
+        },
+        "OpenAI#gpt-5": {
+          "maxTokens": 128000
+        },
+        "OpenAI#gpt-5-mini": {
+          "maxTokens": 128000
+        },
+        "OpenAI#gpt-5-nano": {
+          "maxTokens": 128000
+        },
+        "OpenAI#o3": {
+          "maxTokens": 128000
+        },
+        "OpenAI#o4-mini": {
+          "maxTokens": 128000
+        },
+        "Claude#claude-3-7-sonnet-20250219": {
+          "maxTokens": 200000
+        },
+        "Claude#claude-sonnet-4-20250514": {
+          "maxTokens": 200000
+        },
+        "Gemini#gemini-1.5-flash": {
+          "maxTokens": 1000000
+        },
+        "Gemini#gemini-1.5-pro": {
+          "maxTokens": 1000000
+        },
+        "Gemini#gemini-2.0-flash-001": {
+          "maxTokens": 1000000
+        },
+        "Gemini#gemini-2.0-flash-001-web": {
+          "maxTokens": 1000000
+        },
+        "Gemini#gemini-2.0-flash-lite-001": {
+          "maxTokens": 1000000
+        },
+        "Gemini#gemini-2.5-flash": {
+          "maxTokens": 1000000
+        },
+        "Gemini#gemini-2.5-flash-lite": {
+          "maxTokens": 1000000
+        },
+        "Gemini#gemini-2.5-pro": {
+          "maxTokens": 1000000
+        },
+        "Gemini#gemini-2.5-pro-preview-03-25": {
+          "maxTokens": 1000000
+        },
+        "xAI#grok-3-latest": {
+          "maxTokens": 128000
+        },
+        "xAI#grok-3-mini-latest": {
+          "maxTokens": 128000
+        },
+        "xAI#grok-4": {
+          "maxTokens": 128000
+        },
+        "xAI#grok-code-fast-1": {
+          "maxTokens": 128000
+        },
+        "Mistral#mistral-small-latest": {
+          "maxTokens": 128000
+        },
+        "Mistral#codestral-2501": {
+          "maxTokens": 128000
+        },
+        "Mistral#pixtral-12b-latest": {
+          "maxTokens": 128000
+        },
+        "Mistral#pixtral-large-latest": {
+          "maxTokens": 128000
+        },
+        "Mistral#devstral-small-latest": {
+          "maxTokens": 128000
+        },
+        "Mistral#devstral-medium-latest": {
+          "maxTokens": 128000
+        },
+        "Mistral#magistral-small-latest": {
+          "maxTokens": 128000
+        },
+        "Mistral#magistral-medium-latest": {
+          "maxTokens": 128000
+        },
+        "Perplexity#sonar": {
+          "maxTokens": 128000
+        },
+        "Perplexity#sonar-pro": {
+          "maxTokens": 128000
+        },
+        "Groq#llama-3.1-8b-instant": {
+          "maxTokens": 128000
+        },
+        "Groq#llama-3.3-70b-versatile": {
+          "maxTokens": 128000
+        },
+        "Groq#deepseek-r1-distill-llama-70b": {
+          "maxTokens": 128000
+        },
+        "Groq#meta-llama/llama-4-scout-17b-16e-instruct": {
+          "maxTokens": 128000
+        },
+        "Groq#moonshotai/kimi-k2-instruct": {
+          "maxTokens": 128000
+        },
+        "Groq#moonshotai/kimi-k2-instruct-0905": {
+          "maxTokens": 128000
+        },
+        "Groq#openai/gpt-oss-20b": {
+          "maxTokens": 128000
+        },
+        "Groq#openai/gpt-oss-120b": {
+          "maxTokens": 128000
+        },
+        "Groq#qwen/qwen3-32b": {
+          "maxTokens": 128000
+        },
+        "Together#meta-llama/Llama-3-8b-chat-hf": {
+          "maxTokens": 128000
+        },
+        "Together#meta-llama/Llama-3-70b-chat-hf": {
+          "maxTokens": 128000
+        },
+        "Together#meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo": {
+          "maxTokens": 128000
+        },
+        "Together#meta-llama/Meta-Llama-3.1-70B-Instruct-Turbo": {
+          "maxTokens": 128000
+        },
+        "Together#meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo-128K": {
+          "maxTokens": 128000
+        },
+        "Together#meta-llama/Llama-3.3-70B-Instruct-Turbo": {
+          "maxTokens": 128000
+        },
+        "Together#meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8": {
+          "maxTokens": 128000
+        },
+        "Together#nvidia/Llama-3.1-Nemotron-70B-Instruct-HF": {
+          "maxTokens": 128000
+        },
+        "Together#Qwen/Qwen2.5-7B-Instruct-Turbo": {
+          "maxTokens": 128000
+        },
+        "Together#Qwen/Qwen2.5-72B-Instruct-Turbo": {
+          "maxTokens": 128000
+        },
+        "Together#Qwen/Qwen2.5-72B-Instruct-Turbo-lora": {
+          "maxTokens": 128000
+        },
+        "Together#Qwen/Qwen3-235B-A22B-Instruct-2507-tput": {
+          "maxTokens": 128000
+        },
+        "Together#Qwen/Qwen3-Coder-480B-A35B-Instruct-FP8": {
+          "maxTokens": 128000
+        },
+        "Together#deepseek-ai/DeepSeek-V3": {
+          "maxTokens": 128000
+        },
+        "Together#deepseek-ai/DeepSeek-R1": {
+          "maxTokens": 128000
+        },
+        "Together#moonshotai/Kimi-K2-Instruct": {
+          "maxTokens": 128000
+        },
+        "Together#moonshotai/Kimi-K2-Instruct-0905": {
+          "maxTokens": 128000
+        },
+        "Cerebras#llama3.1-8b": {
+          "maxTokens": 128000
+        },
+        "Cerebras#llama-3.3-70b": {
+          "maxTokens": 128000
+        }
+      }
     }
   }
 }

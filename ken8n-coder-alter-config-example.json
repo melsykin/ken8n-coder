@@ -1,0 +1,32 @@
+{
+  "$schema": "https://ken8n-coder.ai/config.json",
+  "provider": {
+    "alter": {
+      "options": {
+        "baseURL": "https://alterhq.com/api"
+      }
+    }
+  },
+  "models": {
+    "alter": {
+      "OpenAI#gpt-4o-mini": {
+        "maxTokens": 128000
+      },
+      "OpenAI#gpt-4o": {
+        "maxTokens": 128000
+      },
+      "Claude#Claude-3-5-Sonnet-20240620": {
+        "maxTokens": 200000
+      },
+      "Claude#Claude-3-5-Sonnet-latest": {
+        "maxTokens": 200000
+      },
+      "Gemini#gemini-1.5-pro": {
+        "maxTokens": 1000000
+      },
+      "Gemini#gemini-1.5-flash": {
+        "maxTokens": 1000000
+      }
+    }
+  }
+}
